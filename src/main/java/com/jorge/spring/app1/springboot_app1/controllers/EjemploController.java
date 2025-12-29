@@ -17,7 +17,7 @@ public class EjemploController {
         model.addAttribute("Servidor", "Aplicacion Spring Boot funcionando correctamente");
         model.addAttribute("IP", "192.168.1.1");
 
-        
+
         return "detalles_info";
     }
 }
