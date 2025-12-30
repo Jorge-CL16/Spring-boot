@@ -4,24 +4,39 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import com.jorge.spring.app1.springboot_app1.models.Empleado;
+import com.jorge.spring.app1.springboot_app1.models.dto.ClaseDTO;
 
 
 
 @RestController
+@RequestMapping("/api")
+
+
 public class EjemploRestController {
 
-    @GetMapping("/detalles_info2")
+    @GetMapping(path = "/detalles_info2")
 
-    public Map<String, Object> detalles_info2() {
+    public ClaseDTO detalles_info2() {
+
+        /* 
+        Empleado empleado1 = new Empleado("Jorge", "Diaz", "Cakke 123", 
+        "Developer", 21, 123456789, 1);
+
         Map<String, Object> respuesta = new HashMap<>();
-        respuesta.put("Titulo", "Servidor en linea");
-        respuesta.put("Servidor", "Aplicacion Spring Boot funcionando correctamente");
-        respuesta.put("IP", "192.168.1.1");
+        respuesta.put("Empleado", "Datos empleado");
+        respuesta.put("Información", empleado1);*/
+  
+
+        ClaseDTO usuario1 = new ClaseDTO();
+        usuario1.setTitulo("Administrador");
+        usuario1.setUsuario("Jorge");
 
 
-        return respuesta;
+
+        return usuario1;
     }
 }
