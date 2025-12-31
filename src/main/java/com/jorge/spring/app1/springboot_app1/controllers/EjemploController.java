@@ -9,10 +9,6 @@ import com.jorge.spring.app1.springboot_app1.models.Empleado;
 import java.util.List;
 import java.util.Arrays;
 
-
-
-
-
 @Controller
 public class EjemploController {
 
